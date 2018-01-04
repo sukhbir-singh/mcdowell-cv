@@ -48,6 +48,8 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{array} 
 
+\usepackage{color}
+
 % Required for ifthenelse statements
 \usepackage{etoolbox} 
 
