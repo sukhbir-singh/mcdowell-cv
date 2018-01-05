@@ -23,7 +23,7 @@
 
 % Set up the fonts according to options
 \def\mainfontsize{11pt}
-\def\mainfontface{Cabin}
+\def\mainfontface{Calibri}
 
 \DeclareOption{calibri}{%
   \def\mainfontface{Calibri}
@@ -39,8 +39,18 @@
 
 % Set font face
 \usepackage{fontspec}
-\setmainfont[SmallCapsFeatures={Renderer=Basic},
-Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
+
+% \setmainfont[SmallCapsFeatures={Renderer=Basic},
+% Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
+
+\setmainfont[
+    Path           = ./fonts/,
+    Extension      = .ttf,
+    Ligatures      = TeX,
+    BoldFont       = AdobeGaramondProBold,
+    ItalicFont     = AdobeGaramondProItalic,
+    BoldItalicFont = AdobeGaramondProBoldItalic
+]{AdobeGaramondProRegular}
 
 % Remove paragraph indentation
 \usepackage[parfill]{parskip} 
@@ -96,7 +106,7 @@ Ligatures={TeX, NoCommon, NoDiscretionary}]{\mainfontface}
 	\def\afterdoublelinesubsectionheaderspace{-11.75pt}
 	\def\aftermultilinesubsectionheaderspace{-7.75pt}
 	\def\afteremptysubsectionheaderspace{1.25pt}
-	\def\subsectionmargin{9pt}
+	\def\subsectionmargin{8pt}
 	\def\aftersubsectionspace{2.1pt}
 }{
 	\def\namespaceskip{0.4em}
