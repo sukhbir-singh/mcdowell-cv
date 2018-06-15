@@ -170,7 +170,7 @@
 \makeatletter
 \newcommand\makeheader{
 	\begin{center}
-		\begin{tabu} to 1\textwidth { X[l,m] X[2,c,m] X[r,m] }
+		\begin{tabu} to 1\textwidth { X[1.2,l,m] X[2,c,m] X[1.2,r,m] }
 			\printaddress & \printname & \printcontacts \\
 		\end{tabu}	
 	\end{center}
