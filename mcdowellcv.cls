@@ -140,6 +140,19 @@
 
 \makeatother
 
+% Profiles
+
+\makeatletter
+
+\newcommand\profiles[1]{\def\@profiles{#1}}
+\profiles{}
+
+\newcommand\printprofiles{
+	\small{\@profiles}
+}
+
+\makeatother
+
 % Name
 \makeatletter
 
@@ -171,7 +184,7 @@
 \newcommand\makeheader{
 	\begin{center}
 		\begin{tabu} to 1\textwidth { X[1.2,l,m] X[2,c,m] X[1.2,r,m] }
-			\printaddress & \printname & \printcontacts \\
+			\printprofiles & \printname & \printcontacts \\
 		\end{tabu}	
 	\end{center}
 	\vspace*{\afterheaderspace}
